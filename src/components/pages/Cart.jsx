@@ -37,7 +37,7 @@ function Cart() {
               <td>
                 <div className="flex justify-center">
                   <img
-                    src={"http://localhost:3000/" + item.product.img}
+                    src={"https://technotronix-api-vh62.onrender.com/" + item.product.img}
                     className="h-[50px]"
                     alt=""
                   />
