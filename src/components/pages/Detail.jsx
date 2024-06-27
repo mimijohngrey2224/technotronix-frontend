@@ -33,7 +33,7 @@ function Detail() {
         </div>
         <div className='w-[50%]'>
             <h1 className='text-2xl font-bold border-b-2 mb-5'>{caritem?.name}</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non facere nostrum optio perspiciatis vero dolores quas modi vitae reprehenderit nesciunt est fugiat et minus, incidunt soluta numquam corrupti dolorem error?</p>
+            {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non facere nostrum optio perspiciatis vero dolores quas modi vitae reprehenderit nesciunt est fugiat et minus, incidunt soluta numquam corrupti dolorem error?</p> */}
             <p className='mt-5 font-bold'>Category:<span className='italic text-orange-500'>{caritem?.category.name}</span> </p>
             <p className='text-xl font-bold mb-5 mt-5'>{caritem?.price}</p>
             <button onClick={isAuthenticated ? ()=> addToCart(caritem._id) : login} className='bg-orange-500 p-[10px] rounded-md'>Add to cart</button>        
