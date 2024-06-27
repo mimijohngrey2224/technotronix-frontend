@@ -47,7 +47,7 @@ export const EcomProvider = ({ children }) => {
   const showRoom = inventory.filter((item) => item.inventory === true);
 
   const fetchProduct = async () => {
-    const response = await fetch("https://technotronix-api-vh62.onrender.com/product");
+    const response = await fetch("https://technotronix-api-vh62.onrender.com/api/product");
     const data = await response.json();
     setProduct(data);
   };
