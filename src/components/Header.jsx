@@ -206,7 +206,7 @@ function Header() {
         </Link> */}
           <div className="text-[15px] font-medium flex items-center gap-2">
             <img
-              src={"http://localhost:3000/" + user?.img}
+              src={"https://technotronix-api-vh62.onrender.com/" + user?.img}
               alt=""
               className="h-7 w-7 rounded-full"
             />

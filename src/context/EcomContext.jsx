@@ -47,14 +47,14 @@ export const EcomProvider = ({ children }) => {
   const showRoom = inventory.filter((item) => item.inventory === true);
 
   const fetchProduct = async () => {
-    const response = await fetch("http://localhost:3000/api/product");
+    const response = await fetch("https://technotronix-api-vh62.onrender.com/product");
     const data = await response.json();
     setProduct(data);
   };
 
   const addToCart = async (productId) => {
     try {
-      const res = await fetch("http://localhost:3000/addToCart", {
+      const res = await fetch("https://technotronix-api-vh62.onrender.com/addToCart", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -78,7 +78,7 @@ export const EcomProvider = ({ children }) => {
 
   const fetchCart = async () => {
     try {
-      const res = await fetch("http://localhost:3000/cart", {
+      const res = await fetch("https://technotronix-api-vh62.onrender.com/cart", {
         method: "GET",
         headers: {
           "Content-Type": "appliction/json",
@@ -104,7 +104,7 @@ export const EcomProvider = ({ children }) => {
       return;
     }
     try {
-      const res = await fetch("http://localhost:3000/update-quantity", {
+      const res = await fetch("https://technotronix-api-vh62.onrender.com/update-quantity", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -133,7 +133,7 @@ export const EcomProvider = ({ children }) => {
 
   const removeItem = async (productId) => {
     try {
-      const res = await fetch("http://localhost:3000/delete-item", {
+      const res = await fetch("https://technotronix-api-vh62.onrender.com/delete-item", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -160,13 +160,13 @@ export const EcomProvider = ({ children }) => {
   };
 
   const fetchCarousel = async () => {
-    const response = await fetch("http://localhost:3000/carousel");
+    const response = await fetch("https://technotronix-api-vh62.onrender.com/carousel");
     const data = await response.json();
     setSlide(data);
   };
 
   const fetchShowroom = async () => {
-    const response = await fetch("http://localhost:3000/inventory");
+    const response = await fetch("https://technotronix-api-vh62.onrender.com/inventory");
     const data = await response.json();
     setCars(data);
   };
@@ -198,7 +198,7 @@ export const EcomProvider = ({ children }) => {
   // }
 const createOrder = async(transaction_id, orderId)=>{
   try {
-    const createOrder = await fetch("http://localhost:3000/api/payment/verify", {
+    const createOrder = await fetch("https://technotronix-api-vh62.onrender.com/api/payment/verify", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
