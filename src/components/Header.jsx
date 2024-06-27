@@ -157,9 +157,9 @@ function Header() {
       </nav>
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center justify-center w-[35px] h-[25px] lg:hidden"
+        className="flex items-center justify-center w-[35px] h-[35px] float right lg:hidden"
       >
-        <HiMenuAlt3 className="text-3xl" />
+        <HiMenuAlt3 className="text-3xl " />
       </button>
       <div
         onClick={() => setOpen(!open)}
