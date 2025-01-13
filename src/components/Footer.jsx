@@ -8,7 +8,7 @@ function Footer() {
     <>
       <div className="bg-orange-500 py-10 px-5 md:px-10 flex flex-col md:flex-row justify-between">
         <div className="flex items-center justify-center md:justify-start mb-5 md:mb-0">
-          <p className="text-2xl font-bold">TECHNOTRONIX</p>
+          <p className="text-2xl font-bold">CarVibe</p>
         </div>
         <div className="text-center md:text-left mb-5 md:mb-0">
           <h1 className="text-lg font-bold mb-2">Useful Links</h1>
@@ -38,7 +38,7 @@ function Footer() {
         </div>
       </div>
       <div className="bg-black text-white text-center py-2">
-        <p>&copy; Copyright Technotronix | All rights reserved.</p>
+        <p>&copy; Copyright CarVibe | All rights reserved.</p>
       </div>
     </>
   );

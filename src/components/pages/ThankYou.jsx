@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react"
-import EcomContext from "../../context/EcomContext"
 import { useSearchParams } from "react-router-dom"
+import EcomContext from "../../context/EcomContext"
 
 function ThankYou() {
   const {createOrder} = useContext(EcomContext)

@@ -16,6 +16,8 @@ function Header() {
   const { user } = useAuth();
   const { deleteItem } = useLocalStorage("auth-token");
 
+
+  
   const isAuthenticated = state.accessToken !== null;
 
   const redirect = useNavigate();
@@ -30,7 +32,7 @@ function Header() {
     <div className="sticky top-0 z-[20] flex items-center justify-between py-[15px] px-5 lg:px-[30px] bg-orange-500">
       <div>
         <Link to="/">
-          <h1 className="text-[24px] lg:text-[30px] font-bold">TECHNOTRONIX</h1>
+          <h1 className="text-[24px] lg:text-[30px] font-bold">CarVibe</h1>
         </Link>
       </div>
       <nav className="hidden lg:flex items-center gap-5">

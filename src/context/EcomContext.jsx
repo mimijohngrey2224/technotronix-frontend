@@ -52,6 +52,7 @@ export const EcomProvider = ({ children }) => {
     setProduct(data);
   };
 
+  // 1
   const addToCart = async (productId) => {
     try {
       const res = await fetch("https://technotronix-api-vh62.onrender.com/addToCart", {
@@ -76,6 +77,7 @@ export const EcomProvider = ({ children }) => {
     }
   };
 
+  // 2
   const fetchCart = async () => {
     try {
       const res = await fetch("https://technotronix-api-vh62.onrender.com/cart", {
@@ -97,6 +99,7 @@ export const EcomProvider = ({ children }) => {
     }
   };
 
+  // 3
   const updateQuantity = async (productId, quantity) => {
     // console.log(quantity);
     if (!quantity > 0) {
@@ -131,6 +134,7 @@ export const EcomProvider = ({ children }) => {
     }
   };
 
+  // 4
   const removeItem = async (productId) => {
     try {
       const res = await fetch("https://technotronix-api-vh62.onrender.com/delete-item", {
