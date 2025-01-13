@@ -159,7 +159,7 @@ function Header() {
       </nav>
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center justify-center w-[35px] h-[35px] float-right lg:hidden"
+        className="flex items-center justify-center w-[35px] h-[35px] absolute right-0 lg:hidden"
       >
         <HiMenuAlt3 className="text-3xl " />
       </button>
@@ -171,6 +171,7 @@ function Header() {
             : "opacity-0 pointer-events-none"
         }`}
       ></div>
+      <RiCloseLine />
       <div
         onClick={() => setOpen(!open)}
         className={`fixed lg:hidden left-0 top-0 w-[300px] h-screen overflow-auto z-[20] bg-white transition-all duration-200 ${
