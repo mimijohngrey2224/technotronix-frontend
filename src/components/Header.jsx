@@ -1,6 +1,6 @@
 import avatar from "../assets/avatar.png";
 import React, { useState } from "react";
-import { HiMenuAlt3 } from "react-icons/hi";
+import { HiMenuAlt3, RiCloseLine  } from "react-icons/hi";
 import { BsCart4 } from "react-icons/bs";
 import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
