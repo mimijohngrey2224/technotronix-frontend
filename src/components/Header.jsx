@@ -1,6 +1,6 @@
 import avatar from "../assets/avatar.png";
 import React, { useState } from "react";
-import { HiMenuAlt3, RiCloseLine  } from "react-icons/hi";
+import { HiMenuAlt3, RiCloseLine } from "react-icons/hi";
 import { BsCart4 } from "react-icons/bs";
 import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
@@ -8,6 +8,7 @@ import EcomContext from "../context/EcomContext";
 import AuthContext from "../context/AuthContext";
 import useLocalStorage from "../hooks/useLocalStorage";
 import useAuth from "../hooks/useAuth";
+import { IoIosCloseCircleOutline } from "react-icons/io";
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -117,7 +118,7 @@ function Header() {
     <div className="sticky top-0 z-[20] flex items-center justify-between py-[15px] px-5 lg:px-[30px] bg-orange-500">
       <div>
         <Link to="/">
-          <h1 className="text-[24px] lg:text-[30px] font-bold">TECHNOTRONIX</h1>
+          <h1 className="text-[24px] lg:text-[30px] font-bold">CarVibe</h1>
         </Link>
       </div>
       <nav className="hidden lg:flex items-center gap-5">
@@ -171,7 +172,7 @@ function Header() {
             : "opacity-0 pointer-events-none"
         }`}
       ></div>
-      <RiCloseLine />
+      <IoIosCloseCircleOutline />
       <div
         onClick={() => setOpen(!open)}
         className={`fixed lg:hidden left-0 top-0 w-[300px] h-screen overflow-auto z-[20] bg-white transition-all duration-200 ${
