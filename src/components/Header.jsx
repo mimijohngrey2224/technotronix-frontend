@@ -172,7 +172,6 @@ function Header() {
             : "opacity-0 pointer-events-none"
         }`}
       ></div>
-      <IoIosCloseCircleOutline />
       <div
         onClick={() => setOpen(!open)}
         className={`fixed lg:hidden left-0 top-0 w-[300px] h-screen overflow-auto z-[20] bg-white transition-all duration-200 ${
